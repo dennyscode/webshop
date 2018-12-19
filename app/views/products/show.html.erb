@@ -1,19 +1,83 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class= "frame">
+  <div class="row">
+    <div class="col-sm-12 col-lg-3">
+      <p>
+        <div class="col-12 header">
+          <strong>Name:</strong>
+        </div><!-- /end col-->
+        <div class="col-12 name">
+          <h2><%= @product.name %></h2>
+        </div>
+      </p>
+    </div><!-- /end col-->
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+    <div class="col-sm-12 col-lg-3">
+    <p>
+      <div class="col-12 header">
+        <strong>Description:</strong>
+      </div><!-- /end col-->
+      <div class="col-12 descr">
+        <%= @product.description %>
+      </div>
+    </p>
+    </div><!-- /end col-->
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+    <div class="col-sm-12 col-lg-3">
+    <p>
+      <div class="col-12 header">
+        <strong>Color:</strong>
+      </div><!-- /end col-->
+      <div class="col-12 descr">
+        <%= @product.colour %>
+      </div>
+    </p>
+    </div><!-- /end col-->
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+    <div class="col-sm-12 col-lg-3">
+      <p>
+        <div class="col-12 header">
+          <strong>Quantity:</strong>
+        </div><!-- /end col-->
+        <div class="col-12">
+          <%= @product.quantity %>
+        </div>
+      </p>
+    </div><!-- /end col-->
+
+    <div class="col-sm-12 col-lg-3">
+      <p>
+        <div class="col-12 header">
+          <strong>Image url:</strong>
+        </div><!-- /end col-->
+        <div class="col-12">
+          <%= @product.image_url %>
+        </div>
+      </p>
+    </div><!-- /end col-->
+
+    <div class="col-12">
+      <%= image_tag(@product.image_url, class: "d-block w-100", :class => "product_frame" ) %>
+    </div><!-- /end col-->
+
+
+    <div class="col-sm-12">
+      <p>
+        <div class="col-12 header">
+          <strong>Prize:</strong>
+        </div><!-- /end col-->
+        <div class="col-12 prize">
+          <%= @product.prize %>€
+        </div>
+      </p>
+    </div><!-- /end col-->
+
+    <div class="col-2 button_row">
+      <%= link_to 'Back', products_path, class:"btn btn-outline-dark" %>
+    </div><!--/end col-->
+    <div class="col-2">
+      <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-outline-dark"  %>
+    </div><!-- /end col-->
+  </div><!-- end row -->
+</div><!-- end show_frame -->
