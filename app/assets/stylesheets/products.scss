@@ -1,3 +1,121 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Colors:
+$color_greenish: #5FAD56;
+$color_yellowish: #FFBC42;
+$color_blueish: #2660A4;
+$color_purpleish: #540D6E;
+$color_creamy: #E3DFFF;
+$color_lightgreenish: #B3D89C;
+$color_reddish: #D1495B;
+
+
+.frame {
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  font-size: 1.6em;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 2em;
+  color: white;
+}
+
+.name h2 {
+  font-family: 'Pacifico', cursive, 'sans-serif';
+  font-size: 3em;
+}
+
+// index
+
+table {
+  color: white;
+}
+
+.url_image {
+  margin-top: 1em;
+  border: .1em solid white;
+  border-radius: .2em;
+  padding: .5em;
+  color: white;
+}
+.url_image:visited {
+  color: white;
+}
+
+.url_image:hover {
+  // background-color: $color_greenish;
+  background-color: $color_greenish;
+  background-size: 200% 100%;
+  background-position:left bottom;
+  text-decoration: none;
+}
+
+.button_row {
+  text-align: left;
+}
+
+.btn:visited {
+  color: white;
+}
+
+.btn {
+  color: white;
+}
+
+// Show:
+
+.descr {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.name, .descr {
+  color: $color_reddish
+}
+
+.product_frame {
+  border-radius: 4em;
+  border: .4em solid $color_reddish;
+  padding: 1.5em;
+  margin: auto;
+  width: 95%;
+  height: 95%;
+}
+
+.product_image {
+  border: .4em solid #FFBC42;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1em;
+  border-radius: 0.4em;
+}
+
+.product_frame h2 {
+  font-family: 'Pacifico', cursive, 'sans-serif';
+  font-size: 2em;
+  color: $color_yellowish;
+}
+
+.product_frame p {
+  color: white;
+}
+
+
+.ruby_code {
+  margin: auto;
+  text-align: center;
+  color: yellow;
+}
+
+.prize {
+  font-size: 3em;
+  font-weight: bold;
+  color: green;
+  border: .2em solid green;
+  border-radius: .2em;
+  padding: 1em;
+}

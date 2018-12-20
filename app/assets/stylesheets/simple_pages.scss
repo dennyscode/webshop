@@ -1,3 +1,157 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* { box-sizing: border-box; }
+// * { border: .02em solid red; }
+
+// This how to create a Glyphicon???
+.glyphicon-euro { content:"\20ac"; }
+
+
+// Colors:
+$color_greenish: #5FAD56;
+$color_yellowish: #FFBC42;
+$color_blueish: #2660A4;
+$color_purpleish: #540D6E;
+$color_creamy: #E3DFFF;
+$color_lightgreenish: #B3D89C;
+$color_reddish: #D1495B;
+
+// Fonts:
+// to be filled..
+//
+//
+
+
+body {
+  background-color: $color_blueish;
+}
+
+
+
+// Navbar starts here --->
+.navbar {
+  background-color: $color_greenish !important;
+  display: block;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5em;
+}
+
+.nav-link {
+  color: white;
+}
+
+#logo {
+  color: $color_yellowish;
+  font-family: 'Pacifico', cursive, 'sans-serif';
+  font-size: 2.5em;
+  display: block;
+  text-decoration: underline;
+  padding-bottom: .5em;
+}
+
+#navbarTogglerDemo01 {
+  display: block;
+  background-color: $color_yellowish;
+  border-radius: 1.2em .6em;
+  padding: .6em;
+}
+
+#search_input {
+  background-color: $color_greenish;
+  border-radius: .6em;
+  font-weight: 600;
+  color: white;
+}
+
+#search_input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  text-align: center;
+}
+
+.navbar-collapse {
+  margin: 0 2em;
+}
+
+.nav-link {
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: .15em solid $color_greenish;
+  border-radius: .6em;
+}
+
+#navbarDropdown, #nav-btn{
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: $color_greenish;
+}
+// <---- Navbar ends here
+
+// Footer starts here --->
+
+#footer_copyright {
+  font-family: 'Pacifico', cursive, 'sans-serif';
+  font-size: 1.2em;
+  display: block;
+}
+
+footer {
+  background-color: $color_greenish;
+  text-align: center;
+  color: white;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+footer:not(#footer_copyright) {
+}
+
+footer > p {
+  display: inline-block;
+  font-size:0.8em;
+  margin: 1em;
+}
+
+footer > p :not(#footer_copyright) {
+  font-weight: bold;
+  text-align: right;
+}
+
+
+// <---- Footer ends here
+
+
+// Index Page:
+
+.index_container h1 {
+  margin: 1em;
+  font-family: 'Pacifico', cursive, 'sans-serif';
+
+}
+
+.index_container {
+  width: 80%;
+  margin: 3em auto;
+  text-align: center;
+  background-color: $color_lightgreenish;
+  border-radius: 3em 2em;
+  border: .2em solid $color_reddish;
+}
+
+#carouselExampleControls {
+  padding: 0 5%;
+}
+
+
+
+
+// Google-Fonts:
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Pacifico', cursive, 'sans-serif';
+// font-family: 'Fredoka One', cursive;
