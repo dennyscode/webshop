@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
   end
 
   def hello
+    @products = Product.all
   end
 
   # GET /products/1
