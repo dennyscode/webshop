@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   get 'simple_pages/index'
   get 'products/id:' => 'products#index'
   # root 'simple_pages#index
-  root 'simple_pages#landing_page'
+  # root 'simple_pages#landing_page'
+  root 'products#index'
   get 'products/hello' => 'products#hello'
   resources :products
   get 'orders/show' => 'orders#show'

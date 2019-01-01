@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+ // * { border: 1px solid red};
+
+ $color_greenish: #5FAD56;
+ $color_yellowish: #FFBC42;
+ $color_blueish: #2660A4;
+ $color_purpleish: #540D6E;
+ $color_creamy: #E3DFFF;
+ $color_lightgreenish: #B3D89C;
+ $color_reddish: #D1495B;
+
+ .navbar {
+   /* position: fixed; */
+   padding: .5em;
+   margin: 0;
+   width: 100%;
+ }
+
+.main_frame {
+margin-top: 10%;
+}
+
+.product_frame, .order_frame {
+  border-radius: 4em;
+  border: .4em solid $color_reddish;
+  padding: 1.5em;
+  margin: auto;
+  width: 95%;
+  height: 95%;
+  overflow-wrap: break-word;
+}
+
+.product_frame h2 {
+  font-family: 'Pacifico', cursive, 'sans-serif';
+  font-size: 2em;
+  color: $color_yellowish;
+}
+
+.product_frame p {
+  color: white;
+}

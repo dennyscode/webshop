@@ -1,1 +1,27 @@
 <h1>I created from scratch: orders / index</h1>
+
+
+
+<div class="frame">
+  <div class="row">
+    <% @orders.each do |order| %>
+      <div class="col-xs-12 col-md-6 col-lg-4 order_frame">
+        <h1>
+          Order # <%= order.id %>:
+          <%= link_to order.product.name, order %>
+        </h1>
+        <p><%= order.product.description %></p>
+        <p><%= order.product.colour %></p>
+        <p><%= order.product.prize %>€</p>
+        <p><%= order.total %> total</p>
+        <p><%= order.product.quantity %> (quantity)</p>
+        <%= if order.product.image_url === nil
+              image_tag("https://cdn3.iconfinder.com/data/icons/school-icons-3/512/Block-512.png", class: "d-block w-100", :class => "product_frame product_image")
+            else
+              image_tag("#{order.product.image_url}", class: "d-block w-100 product_image")
+        end %>
+      </div><!-- /end order_frame-->
+    <% end %>
+    <br>
+  </div><!-- /end row-->
+</div><!-- /end frame-->

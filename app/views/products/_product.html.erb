@@ -2,7 +2,11 @@
   <% if @products.present? %>
     <% @products.each do |product| %>
       <div class="carousel-item<%= " active" if product == @products.first %>">
-        <%= image_tag(product.image_url, class: "d-block w-100 carousel_img") %>
+        <%= if product.image_url == nil
+          image_tag("https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Kermit_the_Frog.jpg/220px-Kermit_the_Frog.jpg", class: "d-block w-100 carousel_img")
+        else
+          image_tag(product.image_url, class: "d-block w-100 carousel_img")
+        end %>
         <a url="<% product %>" class="carousel-caption d-none d-md-block">
           <h5><%= product.name %></h5>
           <p><%= product.prize %>€</p>
@@ -12,4 +16,5 @@
   <% else %>
     <div class="carousel-item active">There is no post to show</div>
   <% end %>
+  <%= @test_fun_var %>
 </div>

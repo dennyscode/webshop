@@ -1,0 +1,24 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// * { border: 1px solid red};
+
+// Colors:
+$color_greenish: #5FAD56;
+$color_yellowish: #FFBC42;
+$color_blueish: #2660A4;
+$color_purpleish: #540D6E;
+$color_creamy: #E3DFFF;
+$color_lightgreenish: #B3D89C;
+$color_reddish: #D1495B;
+
+.order_frame {
+  border-radius: 4em;
+  border: .4em solid $color_reddish;
+  padding: 1.5em;
+  margin: auto;
+  width: 95%;
+  height: 95%;
+  overflow-wrap: break-word;
+}
