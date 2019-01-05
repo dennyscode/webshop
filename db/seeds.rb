@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.create(name: "seed-generated product", description: "I also created this product without using the HTML form!")
 Product.create(name: "Test", description: "TestDescription", image_url: "https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png")
+#
 
 Order.create(user_id: 1, product_id: 1, total: 10.0)
 Order.create(user_id: 1, product_id: 2, total: 5.0)

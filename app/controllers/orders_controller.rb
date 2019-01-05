@@ -4,7 +4,11 @@ class OrdersController < ApplicationController
   end
 
   def show
-    @order = Order.find(params[:id])
+    begin
+      @order = Order.find(params[:id])
+    # rescue ActiveRecord::RecordNotFound => e
+    #   @order = nil
+    end
   end
 
   def new
