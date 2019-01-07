@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
 
   def show
     begin
+      @sum_orders  = Order.all.length
       @order = Order.find(params[:id])
     # rescue ActiveRecord::RecordNotFound => e
     #   @order = nil

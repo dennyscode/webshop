@@ -32,6 +32,10 @@ class ProductsController < ApplicationController
   def edit
   end
 
+  def test
+    redirect_to "/simple_pages/landing_page"
+  end
+
   # POST /products
   # POST /products.json
   def create

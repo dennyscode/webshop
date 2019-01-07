@@ -1,9 +1,16 @@
-<h1>I created from scratch: orders / show</h1>
-
 <div class="container">
   <h2>Order Information</h2>
-  <strong>Order ID: </strong><%= @order.id %>
-  <strong>Product Name: </strong><%= @order.product.name %>
-  <strong>Product Price: </strong><%= number_to_currency(@order.product.price/100.to_f) %>
-  <strong>Total Price: </strong><%= number_to_currency(@order.total/100.to_f) %>
-</div>
+  <strong>Order ID: </strong><%= @order.id %><br>
+  <strong>User ID: </strong><%= @order.user_id %><br>
+  <strong>Total prize: </strong><%= number_to_currency(@order.total/100.to_f) %><br>
+  <strong>Product Name: </strong><%= @order.product.name %><br>
+  <strong>Product prize: </strong><%= number_to_currency(@order.product.prize/100.to_f) %><br>
+  <strong>Total prize: </strong><%= number_to_currency(@order.total/100.to_f) %><br>
+  <%= image_tag(@order.product.image_url, alt: "Product Image", class: "product_img") %>
+
+  <div class="button_row">
+    <div class="btn btn-primary">
+      <%= link_to("Back to Orders list", controller: "orders", action: "index") %>
+    </div>
+  </div><!-- /end button_row -->
+  </div>
