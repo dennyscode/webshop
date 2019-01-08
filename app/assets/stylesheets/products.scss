@@ -14,6 +14,12 @@ $color_lightgreenish: #B3D89C;
 $color_reddish: #D1495B;
 
 
+form label {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .frame {
   margin: auto;
   text-align: center;
@@ -113,13 +119,24 @@ table {
 
 .product_image {
   border: .4em solid #FFBC42;
-  width: 100%;
   padding: 0;
   margin-bottom: 1em;
   border-radius: 0.4em;
 }
 
-.product_frame h2 {
+.actions {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.img_square {
+  margin: auto;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+}
+
+h2 {
   font-family: 'Pacifico', cursive, 'sans-serif';
   font-size: 2em;
   color: $color_yellowish;

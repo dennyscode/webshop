@@ -1,2 +1,13 @@
 <h2>Featured Product:</h2>
 <%= @featured_product.name %>
+
+<%= params[:example_key].to_i*10 %>
+<%= form_with(url: '/products', local: true) do |form| %>
+  Form contents
+<% end %>
+
+<%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+  <%= form.label :q, 'Search for:' %>
+  <%= form.text_field :q, id: 'q', value: params[:q] %>
+  <%= form.submit 'Search' %>
+<% end %>

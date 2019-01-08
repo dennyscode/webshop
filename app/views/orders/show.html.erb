@@ -9,8 +9,6 @@
   <%= image_tag(@order.product.image_url, alt: "Product Image", class: "product_img") %>
 
   <div class="button_row">
-    <div class="btn btn-primary">
-      <%= link_to("Back to Orders list", controller: "orders", action: "index") %>
-    </div>
+    <%= link_to "Back to Orders list", orders_index_path, class: "btn btn-primary" %>
   </div><!-- /end button_row -->
   </div>

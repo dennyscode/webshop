@@ -4,8 +4,13 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
-    @test_variable = 42
+    if params[:q]
+      search_term = params[:q]
+      # return our filtered list here
+      @products = Product.search(search_term)
+    else
+      @products = Product.all
+    end
   end
 
   def hello
