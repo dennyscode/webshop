@@ -28,7 +28,14 @@ body {
   background-color: $color_blueish;
 }
 
+form h1 {
+  text-align: center;
+}
 
+.contact_form {
+  width: 60%;
+  margin: auto;
+}
 
 // Navbar starts here --->
 .navbar {

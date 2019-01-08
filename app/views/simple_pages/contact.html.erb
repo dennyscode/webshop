@@ -1,2 +1,21 @@
-<h1>SimplePages#contact</h1>
-<p>Find me in app/views/simple_pages/contact.html.erb</p>
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+  <h1>Contact Us</h1>
+  <div class="row contact_form">
+    <div class="form-group col-12">
+      <%= form.label :name, class: "col-12" %>
+      <%= form.text_field :name, class: "form-control col-12", placeholder: "Enter Name" %>
+    </div>
+    <div class="form-group col-12">
+      <%= form.label :email, class: "col-12" %>
+      <%= form.text_field :email, class: "form-control col-12", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group col-12">
+      <%= form.label :message, class: "col-12" %>
+      <%= form.text_area :message, class: "form-control col-12", placeholder: "Enter Message", rows: 5 %>
+    </div>
+    <%= form.submit "Send", class: "form_label col-12 btn btn-primary" %>
+  </div>
+
+<% end %>
