@@ -9,6 +9,8 @@ config.action_mailer.smtp_settings = {
 :enable_starttls_auto => true
 }
 
+config.action_mailer.default_url_options = { host: 'enigmatic-meadow-72765.herokuapp.com' }
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 

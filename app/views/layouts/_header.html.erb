@@ -31,7 +31,19 @@
       </div>
     </li>
     </ul>
-    
+    <ul class="navbar-nav ml-auto">
+      <% if user_signed_in? %>
+      <li class="nav-item">
+        <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+      </li>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+      </li>
+      <% end %>
+      </li>
+    </ul>
+
     <!-- This was the old form created in HTML with regular tag <form> -->
     <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" id="search_input" type="search" placeholder="Go Search the Shop.." aria-label="Search">

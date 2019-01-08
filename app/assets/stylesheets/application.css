@@ -27,3 +27,21 @@
 .main_frame {
 margin-top: 10%;
 }
+form .form-group, form .form-check {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#exampleCheck1 {
+  text-align: left !important;
+}
+
+.form-check label {
+  text-align: center;
+
+}
+
+form .log_form {
+
+  margin: auto;
+}
