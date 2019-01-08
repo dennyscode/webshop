@@ -7,7 +7,12 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       # return our filtered list here
-      @products = Product.search(search_term)
+      # @products = Product.where("name LIKE ?", "%#{search_term}%")
+      if Rails.env.production?
+        @products = Product.where("name ILIKE ?", "%#{search_term}%")
+      else
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      end
     else
       @products = Product.all
     end
