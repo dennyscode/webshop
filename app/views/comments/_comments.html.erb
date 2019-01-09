@@ -1,0 +1,15 @@
+<h2>Comments</h2>
+<% @product.comments.each do |comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+  <%= link_to 'Destroy Comment', [comment.product, comment],
+             method: :delete,
+             data: { confirm: 'Are you sure?' } %>
+<% end %>

@@ -71,6 +71,13 @@
           <%= @product.prize %>€
         </div>
       </p>
+      <p>Testing highest_rating_comment:
+        "<%= @product.highest_rating_comment.body %>" by <%= @product.highest_rating_comment.commenter %> with a rating of <%= @product.highest_rating_comment.rating %> Points!</p>
+      <p>Testing lowest_rating_comment:
+        "<%= @product.lowest_rating_comment.body %>" by <%= @product.lowest_rating_comment.commenter %> with a rating of <%= @product.lowest_rating_comment.rating %> Points!</p>
+      <%= render 'comments/comments' %>
+      <%= render 'comments/form' %>
+
     </div><!-- /end col-->
 
     <div class="col-2 button_row">

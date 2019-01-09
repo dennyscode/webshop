@@ -24,7 +24,7 @@
         <%= link_to "OrdersPath", orders_path, :class => "dropdown-item" %>
         <%= link_to "ProductPath(1)", product_path(1), :class => "dropdown-item" %>
         <%= link_to "OrderPath(1)", order_path(1), :class => "dropdown-item" %>
-
+        <%= link_to "User_Path", users_index_path, :class => "dropdown-item" %>
 
         <div class="dropdown-divider"></div>
         <%= link_to "Hello", products_hello_path, :class => "dropdown-item" %>
@@ -52,7 +52,6 @@
 
     <!-- This is the new form created in HTML with Rails function form_with -->
     <%= form_with(url: products_path, method: 'get', local: true, class: "form-inline my-2 my-lg-0") do |form| %>
-      <%= form.text_field :q, id: 'q', value: params[:q], class:"form-control mr-sm-2", id:"search_input", type:"search", placeholder: "Go Search the Shop.." %>
       <%= form.submit 'Search', class:"nav-btn btn btn-outline-success my-2 my-sm-0", type:"submit" %>
     <% end %>
   </div>

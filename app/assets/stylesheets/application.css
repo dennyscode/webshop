@@ -36,6 +36,12 @@ form .form-group, form .form-check {
   text-align: left !important;
 }
 
+#notice, #alert {
+  margin-top: 10%;
+  color: red;
+  font-size: 2em;
+}
+
 .form-check label {
   text-align: center;
 
