@@ -251,6 +251,10 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
+  # config.sign_out_via = :delete
+  # --> Deactivated the :delete and replaced it with :get -->
+  # config/initializers/devise.rb
+  # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :get
 
   # ==> OmniAuth
