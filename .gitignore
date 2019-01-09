@@ -17,6 +17,9 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore environments/production.rb because of Google-Acc
+/config/environments/production.rb
+
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
