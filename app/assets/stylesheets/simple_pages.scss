@@ -66,14 +66,14 @@ form h1 {
   padding: .6em;
 }
 
-#search_input {
+.search_field {
   background-color: $color_greenish;
   border-radius: .6em;
   font-weight: 600;
   color: white;
 }
 
-#search_input::placeholder {
+.search_field::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   text-align: center;
