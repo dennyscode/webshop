@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
   resources :users
-  get '/logout' => 'devise/sessions#destroy'
+  get '/logout' => 'devise/sessions#delete'
 
   get 'simple_pages/about'
   get 'simple_pages/contact'
