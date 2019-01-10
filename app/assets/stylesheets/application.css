@@ -27,7 +27,17 @@
 .main_frame {
 margin-top: 10%;
 }
-form .form-group, form .form-check {
+
+.form_frame {
+  text-align: center;
+  margin: auto;
+}
+
+form h2 {
+  text-align: center;
+}
+
+form .form-group, form .form-check, .actions {
   margin: 1em auto;
   text-align: center;
 }
@@ -45,9 +55,4 @@ form .form-group, form .form-check {
 .form-check label {
   text-align: center;
 
-}
-
-form .log_form {
-
-  margin: auto;
 }

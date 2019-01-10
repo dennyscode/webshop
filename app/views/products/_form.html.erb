@@ -1,52 +1,47 @@
-<div class="row">
-  <%= form_with(model: product, local: true, class: "col-6") do |form| %>
-    <% if product.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+<%= form_with(model: product, local: true, class: "form_frame") do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
-        <ul>
-        <% product.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
-    <div class="form-group">
-      <%= form.label :name, class: "col-12" %><br>
-      <%= form.text_field :name, class: "col-12", placeholder: "Enter Name of Product" %>
-    </div>
-
-    <div class="form-group">
-      <%= form.label :description, class: "col-12" %><br>
-      <%= form.text_area :description, class: "col-12", placeholder: "Enter Description of Product" %>
-    </div>
-
-    <div class="form-group">
-      <%= form.label :image_url, class: "col-12" %><br>
-      <%= form.text_field :image_url, class: "col-12", placeholder: "Enter Image-URL of Product" %>
-    </div>
-
-    <div class="field">
-      <%= form.label :colour, class: "col-12" %><br>
-      <%= form.text_field :colour, class: "col-12", placeholder: "Enter Color of Product" %>
-    </div>
-
-    <div class="field">
-      <%= form.label :prize, class: "col-12" %><br>
-      <%= form.text_field :prize, class: "col-12", placeholder: "Enter Price of Product" %>
-    </div>
-
-    <div class="field">
-      <%= form.label :quantity, class: "col-12" %><br>
-      <%= form.text_field :quantity, class: "col-12", placeholder: "Enter Quantity you want to order of #{begin @product.name.pluralize rescue nil end}" %>
-    </div>
-
-    <div class="actions">
-      <%= form.submit class: "col-6 btn btn-primary" %>
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
     </div>
   <% end %>
-  <div class="img_square">
-    <%= image_tag @product.image_url, class: "col-6 product_image" %>
-  </div><!-- /end img_square -->
-</div><!-- /end row -->
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_url %>
+    <%= form.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colour %><br>
+    <%= form.text_field :colour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prize %><br>
+    <%= form.text_field :prize %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity %><br>
+    <%= form.text_field :quantity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

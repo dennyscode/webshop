@@ -1,5 +1,5 @@
 
-<%= form_for(resource, as: resource_name, class: "row log_form", url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, class: "row form_frame", url: session_path(resource_name)) do |f| %>
   <h2>Log in</h2>
   <div class="form-group col-8">
     <%= f.label :email %><br />
@@ -19,7 +19,7 @@
   <% end -%>
 
   <div class="actions col-8">
-    <%= f.submit "Log in", class: "btn btn-primary" %>
+    <%= f.submit "Log in", class: "col-12 btn btn-primary" %>
   </div>
 <% end %>
 
