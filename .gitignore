@@ -17,8 +17,8 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore environments/production.rb because of Google-Acc
-config/environments/production.rb
+# Using a local_env.yml File because of Google-Acc:
+/config/local_env.yml
 
 # Ignore uploaded files in development
 /storage/*
