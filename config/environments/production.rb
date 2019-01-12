@@ -15,8 +15,8 @@ Rails.application.configure do
 
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
-   :address              => "mail.gmx.de",
-   :port                 => 587,
+   :address              => "mail.gmx.com",
+   :port                 => 25,
    :user_name            => ENV["MAIL_USERNAME"],
    :password             => ENV["MAIL_PASSWORD"],
    :authentication       => "plain",
