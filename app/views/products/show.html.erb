@@ -72,6 +72,20 @@
         </div>
       </p>
 
+      <div class="col-12">
+        <div class="row">
+          <div class="col-4">
+            <%= render 'new_comment' %>
+          </div>
+          <div class="col-8">
+            <%= render 'comments' %>
+          </div>
+          <div class="col-12">
+            <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+          </div>
+        </div>
+      </div>
+
     </div><!-- /end col-->
 
     <div class="col-2 button_row">

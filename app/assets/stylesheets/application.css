@@ -12,9 +12,11 @@
  *
  *= require_tree .
  *= require_self
+  *= require jquery.raty
  */
 
  * { box-sizing: border-box; }
+
 
 
  .navbar {
