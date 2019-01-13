@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  commenter: MyString
+  user: one
   body: MyText
+  rating: 1
   product: one
 
 two:
-  commenter: MyString
+  user: two
   body: MyText
+  rating: 1
   product: two

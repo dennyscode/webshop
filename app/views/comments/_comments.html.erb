@@ -4,11 +4,7 @@
     <% @product.comments.each do |comment| %>
       <%=  %>
       <div class="carousel-item <%=" active" if comment==@product.comments.first %>">
-        <div class="d-block w-100" alt="<% comment.commenter %>">>
-          <p>
-            <strong>Commenter:</strong>
-            <%= comment.commenter %>
-          </p>
+        <div class="d-block w-100" >
           <p>
             <strong>Comment:</strong>
             <%= comment.body %>

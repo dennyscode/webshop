@@ -2,10 +2,6 @@
 <%= form_with(model: [ @product, @product.comments.build ], local: true, class: "row form_frame") do |form| %>
 
   <p div class="form-group col-8">
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter, class: "form-control" %>
-  </p>
-  <p div class="form-group col-8">
     <%= form.label :body %><br>
     <%= form.text_area :body, class: "form-control" %>
   </p>
