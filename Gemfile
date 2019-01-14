@@ -43,6 +43,7 @@ gem 'devise'
 ## Paginate-Gemfile for Rails 3+, Sinatra, and Merb
 ## https://github.com/mislav/will_paginate#basic-will_paginate-use
 gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
