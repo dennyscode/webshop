@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: "d.sander@schaltglas.de"
+  # default from: "d.sander@schaltglas.de"
 
 def contact_form(email, name, message)
 @message = message
