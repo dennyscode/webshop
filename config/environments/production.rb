@@ -13,6 +13,7 @@ Rails.application.configure do
     end if File.exists?(env_file)
   end
 
+
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
    :address              => "w0152e18.kasserver.com",
