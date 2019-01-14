@@ -21,7 +21,7 @@ Rails.application.configure do
    :password             => ENV["MAIL_PASSWORD"],
    :authentication       => "plain",
   :enable_starttls_auto => true
-  
+
   }
 
 
