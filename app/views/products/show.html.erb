@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 <div class= "frame">
   <div class="row">
     <div class="col-sm-12 col-lg-2">
@@ -62,15 +63,16 @@
     </div><!-- /end col-->
 
 
+
     <div class="col-sm-12">
-      <p>
-        <div class="col-12 header">
-          <strong>Prize:</strong>
-        </div><!-- /end col-->
-        <div class="col-12 prize">
-          <%= @product.prize %>€
-        </div>
-      </p>
+      <div class="col-12 header">
+        <strong>Prize:</strong>
+      </div><!-- /end col-->
+      <div class="col-12 prize">
+        <%= @product.prize %>€
+      </div>
+
+
 
       <div class="col-12">
         <div class="row">
@@ -86,7 +88,6 @@
           </div>
         </div>
       </div>
-
     </div><!-- /end col-->
 
     <div class="col-2 button_row">
@@ -97,3 +98,7 @@
     </div><!-- /end col-->
   </div><!-- end row -->
 </div><!-- end show_frame -->
+
+<%= form_with(url: '/payments/create') do |form| %>
+<%= render partial: "shared/stripe_checkout_button" %>
+<% end %>
