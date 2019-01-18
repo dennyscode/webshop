@@ -1,6 +1,8 @@
 require 'rails_helper'
 require 'spec_helper'
 
+
+
 describe Product do
   context "when the product has comments" do
     let(:product) { Product.create!(name: "very fun toy")}

@@ -58,6 +58,8 @@ group :development, :test do
   gem 'sqlite3'
   # Adding Testing feature RSpec
   gem 'rspec-rails', '~> 3.8'
+  gem 'rails-controller-testing'
+
 end
 
 group :development do

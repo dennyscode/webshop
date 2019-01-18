@@ -1,6 +1,20 @@
 require 'rails_helper'
 require 'spec_helper'
 
+RSpec.describe User, type: :model do
+  before(:each) do
+    @user = User.create!(first_name:"Test", last_name: "Name", password: "secret", email:"test@mail.com")
+  end
+
+  describe "validations" do
+    it "it should not have item created if password or mail is missing" do
+      @user.email = nil
+      expect(@user).to_not be_valid
+    end
+  end
+
+end
+
 describe User do
   # context "User needs to have an email-adress" do
     let(:user){User.create!(email:"user@email.com", password:"secret")}

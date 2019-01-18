@@ -20,12 +20,6 @@ class ProductsController < ApplicationController
 
   def hello
     @products = Product.all
-
-    def test_fun(id)
-      test_fun_var = Product.find(id)
-      puts test_fun_var
-    end
-
   end
 
   # GET /products/1
