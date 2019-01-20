@@ -71,6 +71,11 @@
       <div class="col-12 prize">
         <%= @product.prize %>€
       </div>
+      <div class="col-12"
+        <%= form_with(url: '/payments/create') do |form| %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
+      </div>
 
 
 
@@ -98,7 +103,3 @@
     </div><!-- /end col-->
   </div><!-- end row -->
 </div><!-- end show_frame -->
-
-<%= form_with(url: '/payments/create') do |form| %>
-<%= render partial: "shared/stripe_checkout_button" %>
-<% end %>
