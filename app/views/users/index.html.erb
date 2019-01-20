@@ -3,14 +3,16 @@
 <div class="table_frame">
   <h2 class="col-12">Users</<h2>
   <div class="row">
-    <p class="col-3">First name</p>
-    <p class="col-3">Last name</p>
+    <p class="col-2">First name</p>
+    <p class="col-2">Last name</p>
+    <p class="col-2">Admin?</p>
     <p class="col-2">Show</p>
     <p class="col-2">Edit</p>
     <p class="col-2">Destroy</p>
     <% @users.each do |user| %>
-      <p class="col-3"><%= user.first_name %></p>
-      <p class="col-3"><%= user.last_name%></p>
+      <p class="col-2"><%= user.first_name %></p>
+      <p class="col-2"><%= user.last_name%></p>
+      <p class="col-2"><%= user.admin%></p>
       <%= link_to 'Show', user, class: "col-2" %>
       <%= link_to 'Edit', edit_user_path(user), class: "col-2" %>
       <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "col-2" %>

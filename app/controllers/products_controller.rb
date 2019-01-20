@@ -4,19 +4,18 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    byebug
     if params[:q]
       search_term = params[:q]
       # return our filtered list here
       # @products = Product.where("name LIKE ?", "%#{search_term}%")
       if Rails.env.production?
-        logger.debug "before: in production search for product name in db"
+        # logger.debug "before: in production search for product name in db"
         @products = Product.where("name ILIKE ?", "%#{search_term}%")
-        logger.debug "after: in production search for product name in db"
+        # logger.debug "after: in production search for product name in db"
       else
-        logger.debug "before: in test and dev search for product name in db"
+        # logger.debug "before: in test and dev search for product name in db"
         @products = Product.where("name LIKE ?", "%#{search_term}%")
-        logger.debug "after: in test and dev search for product name in db"
+        # logger.debug "after: in test and dev search for product name in db"
 
       end
     else
@@ -31,9 +30,9 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    logger.debug "before sorting and paginating"
+    # logger.debug "before sorting and paginating"
     @comments = @product.comments.paginate(:page => params[:page], :per_page => 3).order("created_at DESC")
-    logger.debug "after sorting and paginating"
+    # logger.debug "after sorting and paginating"
 
   end
 
@@ -54,17 +53,17 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
-    logger.debug "Product new performed"
+    # logger.debug "Product new performed"
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
-        logger.debug "Product saved"
+        # logger.debug "Product saved"
 
       else
         format.html { render :new }
         format.json { render json: @product.errors, status: :unprocessable_entity }
-        logger.debug "Product not saved"
+        # logger.debug "Product not saved"
 
       end
     end

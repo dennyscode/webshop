@@ -9,7 +9,6 @@
           <strong>Name:</strong>
         </div><!-- /end col-->
         <div class="col-12 name">
-          <% logger.debug "Product: #{@product.name}"%>
           <h2><%= @product.name %></h2>
         </div>
       </p>
@@ -60,7 +59,7 @@
     </div><!-- /end col-->
 
     <div class="col-12">
-      <%= image_tag(@product.image_url, class: "d-block w-100", :class => "product_frame" ) %>
+      <%= image_tag(@product.image_url, class: "d-block w-100 product_frame") %>
     </div><!-- /end col-->
 
 

@@ -13,7 +13,6 @@
           <p><%= product.colour %></p>
           <p><%= product.prize %>€</p>
           <p><%= product.quantity %> (quantity)</p>
-          <p><%= product.image_url %></p>
           <%= if product.image_url === nil
                 image_tag("https://cdn3.iconfinder.com/data/icons/school-icons-3/512/Block-512.png", class: "d-block w-100", :class => "product_frame product_image")
               else

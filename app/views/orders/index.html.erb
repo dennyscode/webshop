@@ -16,7 +16,7 @@
         <p><%= order.total %> total</p>
         <p><%= order.product.quantity %> (quantity)</p>
         <%= if order.product.image_url === nil
-              image_tag("https://cdn3.iconfinder.com/data/icons/school-icons-3/512/Block-512.png", class: "d-block w-100", :class => "product_frame product_image")
+              image_tag("https://cdn3.iconfinder.com/data/icons/school-icons-3/512/Block-512.png", :class => "d-block w-100 product_frame product_image")
             else
               image_tag("#{order.product.image_url}", class: "d-block w-100 product_image")
         end %>
