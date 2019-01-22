@@ -59,9 +59,11 @@
     </div><!-- /end col-->
 
     <div class="col-12">
-      <%= image_tag(@product.image_url, class: "d-block w-100 product_frame") %>
+      <%= image_tag(@product.image_url, width: "50%", data_zoom_image: "@product.product_image.url", class: "img-zoom d-block w-100 product_frame") %>
     </div><!-- /end col-->
-
+    <div class="col-6">
+      <%= image_tag(@product.image_url, width: "350", data_zoom_image: "@product.product_image.url", class: "img-zoom") %>
+    </div>
 
 
     <div class="col-sm-12">
@@ -76,11 +78,7 @@
           <%= hidden_field_tag(:product_id, @product.id) %>
           <%= render partial: "shared/stripe_checkout_button" %>
         <% end %>
-
-        
-
       </div>
-
 
 
       <div class="col-12">
