@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-
 <div class= "frame">
   <div class="row">
     <div class="col-sm-12 col-lg-2">
@@ -73,7 +72,7 @@
       <div class="col-12 prize">
         <%= @product.prize %>€
       </div>
-      <div class="col-12"
+      <div class="col-12">
         <%= form_with(url: '/payments/create') do |form| %>
           <%= hidden_field_tag(:product_id, @product.id) %>
           <%= render partial: "shared/stripe_checkout_button" %>

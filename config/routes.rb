@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
+  devise_scope :user do
+    get '/sign-in' => "devise/sessions#new", :as => :login
+  end
   resources :orders, only: [:index, :show, :create, :destroy]
   resources :users
   get 'simple_pages/about'
@@ -15,7 +18,7 @@ Rails.application.routes.draw do
   # root 'products#index'
   get 'products/hello' => 'products#hello'
   get '/products', to: 'products#index'
-
+  post 'payments/create'
   get 'orders/show' => 'orders#show'
   get 'orders/index' => 'orders#index'
   get 'users/index' => 'users#index'
