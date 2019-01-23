@@ -1,6 +1,7 @@
-$(document).on('turbolinks:load', function(){
+
   // Raty Plugin
   // - for rating
+var refreshRating = function() {
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
@@ -17,10 +18,14 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+};
+
+
+$(document).on('turbolinks:load ajaxSuccess', function(){
+  refreshRating();
 
   // ElevatZoom Plugin
-    $('.img-zoom').elevateZoom( {
-      constrainType:"height", constrainSize:274, zoomType: "lens", containLensZoom: true, gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: "active"
-    });
-
+  $('.img-zoom').elevateZoom( {
+    constrainType:"height", constrainSize:274, zoomType: "lens", containLensZoom: true, gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: "active"
+  });
 });

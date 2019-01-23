@@ -90,7 +90,7 @@
             <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
           </div>
           <div class="col-12">
-            <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+            <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
           </div>
         </div>
       </div>
