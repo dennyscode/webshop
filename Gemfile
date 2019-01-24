@@ -45,6 +45,9 @@ gem 'devise'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 gem 'stripe'
+# For Caching (using MemCachier):
+gem 'dalli'
+
 
 # Brakeman-Tool for Static Analysis Security
 gem "brakeman"

@@ -21,11 +21,11 @@ var refreshRating = function() {
 };
 
 
-$(document).on('turbolinks:load ajaxSuccess', function(){
+$(document).on('turbolinks:load ajaxSuccess', function() {
   refreshRating();
 
   // ElevatZoom Plugin
   $('.img-zoom').elevateZoom( {
-    constrainType:"height", constrainSize:274, zoomType: "lens", containLensZoom: true, gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: "active"
+    constrainType:"height", lensShape: "round", constrainSize:274, zoomType: "lens", containLensZoom: true, gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: "active"
   });
 });
