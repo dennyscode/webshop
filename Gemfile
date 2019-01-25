@@ -47,7 +47,8 @@ gem 'will_paginate-bootstrap'
 gem 'stripe'
 # For Caching (using MemCachier):
 gem 'dalli'
-
+# Redis Performance Strategy
+gem 'redis-rails'
 
 # Brakeman-Tool for Static Analysis Security
 gem "brakeman"
