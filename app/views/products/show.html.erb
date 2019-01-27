@@ -83,7 +83,8 @@
           <div class="col-4">
             <%= render 'new_comment' %>
           </div>
-          <div class="col-8">
+          <div class="col-7">
+            <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
             <%= render 'comments' %>
             <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
           </div>
