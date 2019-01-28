@@ -1,0 +1,105 @@
+@import "variables";
+
+
+// Navbar starts here --->
+.navbar {
+  background-color: $color_greenish !important;
+  display: block;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5em;
+}
+
+.nav-link {
+  color: white;
+}
+
+#logo {
+  color: $color_yellowish;
+  font-family: 'Pacifico', cursive, 'sans-serif';
+  font-size: 2.5em;
+  display: block;
+  text-decoration: underline;
+  padding-bottom: .5em;
+  margin-top: .5em;
+  margin-bottom: .25em;
+}
+
+#navbarTogglerDemo01 {
+  display: block;
+  background-color: $color_yellowish;
+  border-radius: 1.2em .6em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  padding: .6em
+}
+
+.search_field {
+  background-color: $color_greenish;
+  border-radius: .6em;
+  font-weight: 600;
+  color: white;
+}
+
+.search_field::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  text-align: center;
+}
+
+.navbar-collapse {
+  margin: 0 2em;
+}
+
+.nav-link {
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: .15em solid $color_greenish;
+  border-radius: .6em;
+}
+
+#navbarDropdown, #nav-btn{
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: $color_greenish;
+}
+// <---- Navbar ends here
+
+// Footer starts here --->
+
+.footer_styles {
+  font-family: 'Pacifico', cursive, 'sans-serif';
+  font-size: 1.2em;
+  display: block;
+}
+
+footer {
+  background-color: $color_greenish;
+  text-align: center;
+  color: white;
+  vertical-align: bottom;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+footer:not(#footer_copyright) {
+}
+
+footer > p {
+  display: inline-block;
+  font-size:0.8em;
+  margin: 1em;
+}
+
+footer > p :not(#footer_copyright) {
+  font-weight: bold;
+  text-align: right;
+}
+
+
+// <---- Footer ends here

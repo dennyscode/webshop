@@ -1,15 +1,21 @@
 <div class="push"></div>
 <footer class="footer">
-  <% if user_signed_in? %>
-  <li>
-  <%= link_to('Edit registration', edit_user_registration_path, class: "btn btn-primary") %>
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Register', new_user_registration_path, class: "btn btn-primary")  %>
-  </li>
-<% end %>
-  <p id="footer_copyright">&copy; 2018 webshop!</p>
-  <p>This is a Rails exercise</p>
-  <p>The date and time is <%= Time.now %></p>
+  <div class="row" id="footer_row">
+    <% if user_signed_in? %>
+    <div class="col-xs-12 col-4">
+    <%= link_to('Edit registration', edit_user_registration_path, class: "btn btn-primary") %>
+    </div>
+  <% else %>
+    <div class="col-xs-12 col-4">
+    <%= link_to('Register', new_user_registration_path, class: "btn btn-primary")  %>
+    </div>
+  <% end %>
+    <div class="col-xs-12 col-4">
+      <p class="footer_styles">&copy; 2018 webshop!</p>
+    </div>
+    <div class="col-xs-12 col-4">
+      <p class="footer_styles">This is a Rails exercise</p>
+      <p class="footer_styles">The date and time is <%= Time.now.to_formatted_s(:short) %></p>
+    </div>
+  </div><!-- /end row -->
 </footer>

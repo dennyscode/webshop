@@ -6,7 +6,6 @@
 
 @import "variables";
 
-
 form label {
   font-family: 'Comfortaa', cursive;
   font-size: 1.5em;
@@ -14,9 +13,32 @@ form label {
 }
 
 .frame {
-  margin: auto;
   text-align: center;
 }
+
+.main_frame { margin-top: 38em;}
+
+@media (min-width: 576px) {
+  .main_frame { margin-top: 33em;}
+}
+// @media (min-width: 768px) {
+//   .main_frame { margin-top: 25em;}
+//   }
+  @media (min-width: 1200px) {
+    .main_frame { margin-top: 15em;}
+    }
+
+
+// .mt-2 {
+//
+// }
+//
+// .mt-lg-0 {
+//   .main_frame { margin-top: 15em;}
+// }
+
+
+
 
 .header {
   font-size: 1.6em;

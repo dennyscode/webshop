@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
     @user = current_user
+    byebug
     respond_to do |format|
       if @comment.save
         # CF Task 6.14 --> Has to be deactivated
