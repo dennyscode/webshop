@@ -14,6 +14,11 @@
 .navbar-toggler {
   border: .2em solid $more_textcolor !important;
 }
+
+.navbar-toggler:focus {
+  border: .2em solid white !important;
+}
+
 .navbar-toggler i {
     color: $more_textcolor;
 }
