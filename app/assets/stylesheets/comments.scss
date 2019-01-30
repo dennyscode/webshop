@@ -1,12 +1,26 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
 
 .row {
+}
 
+.comments_frame {
+  background-color: $other_bgcolor;
+  border-radius: 0 0 5em 5em;
 }
 
 .comment_col {
   width: 80%;
   text-align: center;
+}
+
+.avg_rating {
+  margin-top: 2em;
+  border-bottom: .05em solid white;
+}
+
+.top_margin {
+  margin-top: 2em;
 }

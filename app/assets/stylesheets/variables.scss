@@ -1,10 +1,48 @@
-// Colors:
-$color_greenish: #5FAD56;
-$color_yellowish: #FFBC42;
-$color_blueish: #2660A4;
-$color_purpleish: #540D6E;
-$color_creamy: #E3DFFF;
-$color_lightgreenish: #B3D89C;
-$color_reddish: #D1495B;
+// ## Colors:
+//
+// Source: https://coolors.co/8ab0ab-e5ffde-f7d08a-de6b48-071013
+// $col_pewterblue: #8AB0AB; //pewterblue
+// $col_nyanza: #E5FFDE; //nyanza
+// $col_peachorange: #F7D08A; //peachorange
+// $col_jellybean: #DE6B48; //jellybean
+// $col_richblack: #071013; //richblack
+// $col_darkpuce: #433A3F; //darkpuce
 
-$font_main: 'Comfortaa', cursive;
+//Text-Color
+$logo_textcolor: #433A3F; //darkpuce
+$main_textcolor: #071013; //richblack
+$sub_textcolor: #E5FFDE; //nyanza
+$other_textcolor: #DE6B48; //jellybean
+$more_textcolor: #F7D08A; //peachorange
+
+//Background-Color
+$main_bgcolor: #DE6B48; //jellybean
+$sub_bgcolor: #F7D08A; //peachorange
+$other_bgcolor: #8AB0AB; //pewterblue
+
+//Highlight-Color
+$special_highlightcolor: #433A3F; //darkpuce
+$main_highlightcolor: #DE6B48; //jellybean
+$sub_highlightcolor: #F7D08A; //peachorange
+$other_highlightcolor: #E5FFDE; //nyanza
+
+// ## Fonts:
+//
+// Source: https://fonts.google.com/?selection.family=Abel|Amatic+SC|Cinzel&query=Cinzel
+// font-family: 'Abel', sans-serif;
+// font-family: 'Amatic SC', cursive;
+// font-family: 'Cinzel', serif;
+
+$logo_font: 'Cinzel', serif;
+$special_font: 'Amatic SC', cursive;
+$main_font:  'Abel', sans-serif;
+// $sub_font:
+// $other_font:
+
+// $color_greenish: #5FAD56;
+// $color_yellowish: #FFBC42;
+// $color_blueish: #2660A4;
+// $color_purpleish: #540D6E;
+// $color_creamy: #E3DFFF;
+// $color_lightgreenish: #B3D89C;
+// $color_reddish: #D1495B;

@@ -1,21 +1,28 @@
 <!-- Navbar Starts here -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-angle-double-up"></i>
   </button>
-  <div class="navbar-brand" id="logo" href="#">webshop!</div>
+
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="nav_items">
       <li class="nav-item">
-        <%= link_to "Home", simple_pages_index_path, :class => "nav-link", :id =>  "nav-btn" %>
+        <%= link_to "Home", simple_pages_index_path, :class => "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "About", simple_pages_about_path, :class => "nav-link", :id => "nav-btn" %>
+        <%= link_to "About", simple_pages_about_path, :class => "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contact", simple_pages_contact_path, :class => "nav-link", :id => "nav-btn" %>
+        <%= link_to "Contact", simple_pages_contact_path, :class => "nav-link" %>
       </li>
-      <%= link_to "Shop", products_path, :class => "nav-link", :id =>  "nav-btn" %>
+      <li class="nav-item">
+        <%= link_to "Shop", products_path, :class => "nav-link" %>
+      </li>
     </ul>
+    <div id="logo_frame">
+      <i class="fas fa-umbrella-beach"></i>
+      <h1 class="navbar-brand" id="logo" href="#">goholiday!</h1>
+    </div>
     <ul class="navbar-nav ml-auto">
       <% if user_signed_in? %>
       <li class="nav-item">
@@ -23,7 +30,7 @@
       </li>
       <% else %>
       <li class="nav-item">
-        <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+        <%= link_to('Login', new_user_session_path, class: "nav-link btn_helper") %>
       </li>
       <% end %>
       </li>
@@ -38,8 +45,8 @@
     <!-- This is the new form created in HTML with Rails function form_with -->
     <%= form_with(url: products_path, method: 'get', local: true, class: "form-inline my-2 my-lg-0") do |form| %>
 
-      <%= form.text_field :q, id: 'q', value: params[:q], class: "search_field form-control mr-sm-2", type: "search", placeholder: "Go Search the Shop"  %>
-      <%= form.submit 'Search', class:"nav-btn btn btn-outline-success my-2 my-sm-0", type:"submit" %>
+      <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control mr-sm-2", id: "search_field", type: "search", placeholder: "Go Search the Shop"  %>
+      <%= form.submit 'Search', class:"btn nav-my-2 my-sm-0 nav-link", id: "btn_search", type:"submit" %>
     <% end %>
   </div>
 

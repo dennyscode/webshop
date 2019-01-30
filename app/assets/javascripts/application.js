@@ -20,3 +20,28 @@
 //= require jquery.raty.js
 //= require_tree .
 //= require jquery.elevateZoom-3.0.8.min
+
+
+$(document).on('turbolinks:load', function()  {
+  $( ".icon_frame").mouseenter(function() {
+    var parent = $(this).parent()
+    $("p", parent).show(),
+    $( ".icon_frame i", parent ).hide(this);
+  });
+  $( ".icon_frame" ).mouseleave(function() {
+    var parent = $(this).parent()
+    $("p", parent).hide(),
+    $( ".icon_frame i" ).show(this);
+  });
+  $( "#product_card_showbtn").mouseenter(function() {
+    pre_col = $(this).css("background-color")
+    $(this).css("background-color", "white");
+    $(this).css("color", pre_col)
+
+
+  });
+  $( "#product_card_showbtn" ).mouseleave(function() {
+    $(this).css("background-color", pre_col);
+    $(this).css("color", "white")
+  });
+});

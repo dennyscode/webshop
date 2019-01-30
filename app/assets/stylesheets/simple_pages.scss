@@ -13,10 +13,6 @@
 
 
 
-body {
-  background-color: $color_blueish;
-}
-
 form h1 {
   text-align: center;
 }
@@ -31,26 +27,55 @@ form h1 {
 // Index Page:
 
 .index_container h1 {
-  margin: 1em;
   font-family: 'Pacifico', cursive, 'sans-serif';
+}
 
+.carousel-indicators {
+  bottom: 12em !important;
+}
+
+.carousel_control:hover {
+  background-color: transparent;
+}
+
+.carousel_img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+#carousel_icons {
+  color:red;
 }
 
 .index_container {
   width: 80%;
-  margin: 3em auto;
+  margin: 6em auto;
   text-align: center;
-  background-color: $color_lightgreenish;
-  border-radius: 3em 2em;
-  border: .2em solid $color_reddish;
-}
-
-#carouselExampleControls {
-  padding: 0 5%;
+  color: white;
+  background-color: $main_bgcolor;
+  border-radius: 1.5em;
+  border: .15em solid white;
 }
 
 
+// About-Page:
 
+.icon_frame {
+  border: 2px solid $main_textcolor;
+  border-radius: 3em;
+  text-align: center;
+  height: 15em;
+  padding: 1em;
+  margin: 2em;
+
+}
+
+.icon_frame i {
+  font-size: 7.5em;
+  // margin: auto;
+  margin-top: .3em;
+  margin-bottom: auto;
+}
 
 // Google-Fonts:
 // font-family: 'Comfortaa', cursive;

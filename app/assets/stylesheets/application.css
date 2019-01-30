@@ -13,36 +13,18 @@
  *= require_tree .
  *= require_self
  *= require jquery.raty
- *= require variables
- *= require header_footer
+
+
  */
 
  * { box-sizing: border-box; }
 
-
-
- .navbar {
-   /* position: fixed; */
-   padding: .5em;
-   margin: 0;
-   width: 100%;
- }
-
-footer {
-  margin-top: 2em;
-  /* bottom: 0; */
+.main_frame {
+  position: absolute;
+  left: 0 !important;
+  right: 0 !important;
 }
 
-footer .row .col-4 {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-#footer_row {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  padding: 1em;
-}
 
 .form_frame {
   text-align: center;
@@ -51,12 +33,17 @@ footer .row .col-4 {
 
 
 
+/* .turbolinks-progress-bar {
+  height: 5px;
+  background-color: green;
+} */
+
 form .form-group, form .form-check, .actions {
   margin: 1em auto;
   text-align: center;
 }
 
-#exampleCheck1 {
+/* #exampleCheck1 {
   text-align: left !important;
 }
 
@@ -68,5 +55,4 @@ form .form-group, form .form-check, .actions {
 
 .form-check label {
   text-align: center;
-
-}
+} */
