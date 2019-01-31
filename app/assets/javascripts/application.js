@@ -15,7 +15,9 @@
 
 //= require activestorage
 //= require jquery3
-// = require jquery_ujs
+//= require jquery_ujs
+//= require popper
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require jquery.raty.js
 //= require_tree .
@@ -38,10 +40,21 @@ $(document).on('turbolinks:load', function()  {
     $(this).css("background-color", "white");
     $(this).css("color", pre_col)
 
-
   });
   $( "#product_card_showbtn" ).mouseleave(function() {
     $(this).css("background-color", pre_col);
     $(this).css("color", "white")
   });
+
+
+  $("#navbtn_toggle").click(function() {
+    if ($("#navbarTogglerDemo01").hasClass("show")) {
+      console.log("NAVBARTOGGLE-ON")
+      $("#placeholding_element").css("height", "0em");
+    } else {
+      console.log("NAVBARTOGGLE-OFF")
+      $("#placeholding_element").css("height", "38em");
+    }
+  });
+
 });

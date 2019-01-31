@@ -17,6 +17,13 @@ form h1 {
   text-align: center;
 }
 
+.gal_photo {
+  width: 80%;
+  padding: 1em;
+  border-radius: 2em 2em 2em 2em;
+
+}
+
 .contact_form {
   width: 60%;
   margin: auto;
@@ -26,12 +33,33 @@ form h1 {
 
 // Index Page:
 
+.header {
+  text-align: center;
+  font-size: 3em;
+}
+
+.feature_product {
+  margin-bottom: 5em;
+}
+
+.txt_light {
+  color: $sub_textcolor !important;
+}
+
+.txt_dark {
+  color: $other_textcolor !important;
+}
+
+.bg-dark {
+  background-color: $main_bgcolor !important;
+}
+
 .index_container h1 {
   font-family: 'Pacifico', cursive, 'sans-serif';
 }
 
 .carousel-indicators {
-  bottom: 12em !important;
+  bottom: 15.5em !important;
 }
 
 .carousel_control:hover {
@@ -49,7 +77,7 @@ form h1 {
 
 .index_container {
   width: 80%;
-  margin: 6em auto;
+  margin: 2em auto;
   text-align: center;
   color: white;
   background-color: $main_bgcolor;

@@ -4,9 +4,21 @@ body {
   background-color: $sub_bgcolor !important;
 }
 
-#placeholding_element {
-  height: 40em;
+.bot_margin {
+  margin-bottom: 5em;
 }
+
+.top_border {
+  border-top: .5em solid $more_textcolor;
+}
+
+.top_radius {
+  border-radius: 5em 5em 0 0;
+}
+
+// #placeholding_element {
+//   height: 40em;
+// }
 
 .frame .row {
   margin-right: 0 !important;
@@ -14,7 +26,7 @@ body {
 }
 
 .main_frame {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 
@@ -25,6 +37,9 @@ body {
     font-size: 2em;
       display: block !important;
   };
+  .carousel-indicators {
+    bottom: 7em !important;
+  }
   #logo {
     visibility: hidden !important;
     display: inline;
@@ -33,7 +48,9 @@ body {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   };
-
+  .index_container {
+  margin-bottom: 8em !important;
+  }
 }
 
 @media (min-width: 768px) {

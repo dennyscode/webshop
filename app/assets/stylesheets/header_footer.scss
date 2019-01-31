@@ -4,11 +4,11 @@
 .navbar {
   background-color: $main_bgcolor !important;
   display: block;
-  text-align: center;
   font-family: 'Comfortaa', cursive;
-  font-size: 1.5em;
   margin: 0;
   width: 100%;
+  padding: 0 !important;
+
 }
 
 .navbar-toggler {
@@ -60,8 +60,7 @@
   border-radius: .2em;
 }
 
-#navbarTogglerDemo01 {
-  display: block;
+#navbarSupportedContent {
   background-color: $sub_bgcolor;
   border-radius: 1.2em .6em;
   margin-top: .5em;
@@ -113,6 +112,7 @@
 }
 
 .nav-link {
+  text-align: center;
   font-weight: bold;
   margin-left: 1em;
   margin-right: 1em;
@@ -121,38 +121,44 @@
   border-radius: .6em;
   color: $other_textcolor !important;
 }
+.nav-link:hover {
+  color: white !important;
+  background-color: $main_bgcolor;
+  border: .2em solid $sub_bgcolor;
+}
 
-.nav-link-other {
+
+#nav-link-other {
   font-weight: bold;
   margin-left: 1em;
   margin-right: 1em;
-  background-color: $main_bgcolor;
-  border: .2em solid $sub_bgcolor;
+  background-color: $sub_bgcolor;
+  border: .2em solid white;
   border-radius: .6em;
   color: $more_textcolor !important;
 }
 
-.nav-link-other:hover {
+#nav-link-other:hover {
   color: $other_textcolor !important;
-  background-color: $sub_bgcolor !important;
+  background-color: $main_bgcolor !important;
 }
 
 #navbarDropdown {
   color: $other_textcolor;
 }
 
-.nav-link:hover {
-  color: white !important;
-  background-color: $main_bgcolor;
-}
+
 // <---- Navbar ends here
 
 // Footer starts here --->
 
 .footer_styles {
   font-family: 'Pacifico', cursive, 'sans-serif';
-  font-size: 1.2em;
   display: block;
+}
+
+.resp_size, #nav-link-other {
+  font-size: .5em !important;
 }
 
 footer {

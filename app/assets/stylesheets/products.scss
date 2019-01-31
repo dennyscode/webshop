@@ -58,7 +58,7 @@ table {
 
 .button_row {
   text-align: left;
-  margin-bottom: 5em;
+  margin-bottom: 6em;
 }
 
 .btn:visited {
@@ -114,6 +114,7 @@ table {
 
 .product_adm {
   margin-top: 2em;
+  margin-bottom: 6em;
   width: 100%;
   border-radius: .5em;
   background-color: $main_bgcolor;
@@ -127,7 +128,7 @@ table {
   width: 100%;
 }
 
-.product_card_admbtn {
+.product_card_btn {
   margin-top: 2em;
   width: 100%;
   font-weight: bold;
@@ -136,7 +137,9 @@ table {
 
 .product_action_btn {
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border: .15em solid white;
 }
 
 .stripe-button-el {
@@ -179,10 +182,6 @@ h2 {
 
 .show_frame, .card-body {
   background-color: $main_bgcolor;
-}
-
-.top_radius {
-  border-radius: 5em 5em 0 0;
 }
 
 .ruby_code {

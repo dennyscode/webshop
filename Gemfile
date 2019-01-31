@@ -42,13 +42,18 @@ gem 'devise'
 
 ## Paginate-Gemfile for Rails 3+, Sinatra, and Merb
 ## https://github.com/mislav/will_paginate#basic-will_paginate-use
-gem 'will_paginate', '~> 3.1.0'
-gem 'will_paginate-bootstrap'
+
 gem 'stripe'
 # For Caching (using MemCachier):
 gem 'dalli'
 # Redis Performance Strategy
 gem 'redis-rails'
+
+# BootstrapPagination
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
+gem 'bootstrap', '~> 4.2.1'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 # Brakeman-Tool for Static Analysis Security
 gem "brakeman"

@@ -1,68 +1,72 @@
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <%= image_tag("pexels-photo-386000.jpeg" , class: "carousel_img", alt: "Matchbox Van on the Beach") %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag("pexels-photo-257961.jpeg", class: "carousel_img", alt: "Skiing Equpipment for a day out") %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag("maldives-ile-beach-sun-37921.jpeg" , class: "carousel_img", alt: "Relaxing in the Pool") %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag("pexels-photo-415958.jpeg" , class: "carousel_img", alt: "View over in the sky in the mountains") %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag("pexels-photo-221457.jpeg" , class: "carousel_img", alt: "Playing at the beach") %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <%= image_tag("pexels-photo-1450372.jpeg" , class: "carousel_img", alt: "Hammock in paradise") %>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
-
-    <a class="carousel-control-prev carousel_control" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" id="carousel_icons" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next carousel_control" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 top_border text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Best Food</h2>
+      <p>..with 5 star cooks in all our establishments </p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <%= image_tag("service_cooking.jpeg", class: "gal_photo") %>
+      <p class="lead txt_dark">Food you have not tried before</p>
+    </div>
   </div>
-  <div class= "index_container">
-    <h1>Go See Places at GoHoliday</h1>
-    <h2>Your source for dreams you have been thinking of</h2>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 top_border text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">Activities</h2>
+      <p>..with our trainer-crew</p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <%= image_tag("service_wellness.jpeg", class: "gal_photo") %>
+      <p class="lead txt_light">Make a wish and our staff will take care</p>
+    </div>
   </div>
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 top_border text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Daily Service</h2>
+      <p class="lead">.. is provided by our team.</p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <%= image_tag("service_hygiene.jpeg", class: "gal_photo") %>
+      <p class="lead txt_dark">Home is where it feels good</p>
+    </div>
+  </div>
+</div>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 top_border text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Best Quality</h2>
+      <p class="lead">..only certified supplier fullfill our demands.</p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <%= image_tag("service_food.jpeg", class: "gal_photo") %>
+      <p class="lead txt_dark">Make a wish and our staff will take care</p>
+    </div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 top_border text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">Celebrations</h2>
+      <p class="lead">..on the best Spots</p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <%= image_tag("service_events.jpeg", class: "gal_photo") %>
+      <p class="lead txt_light">Make a wish and our staff will take care</p>
+    </div>
+  </div>
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 top_border text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Enjoy our adventures</h2>
+      <p class="lead">..be out, be adventurous</p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <%= image_tag("holiday1_camping_4.jpg", class: "gal_photo") %>
+      <p class="lead txt_dark">Enjoy the adventure of your life!</p>
+    </div>
+  </div>
+</div>
+
+<div class="row feature_product">
+  <div class="col-12">
+    <h2>Featured Product:</h2>
+    <p class="header "><%= @featured_product.name %></p>
+    <%= link_to "Dive right in to our Feature Holiday", product_path(@featured_product.id), class: "nav-link" %>
+  </div>
+</div>
