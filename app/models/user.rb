@@ -6,10 +6,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-   after_create :welcome_send
-   # Send Welcome Message when Registered
-   def welcome_send
-     UserMailer.welcome_send(self).deliver
-     redirect_to root_path, alert: "Thank you for the registration"
-   end
+   # after_create :welcome_send
+   # # Send Welcome Message when Registered
+   #
+   # def welcome_send
+   #   UserMailer.welcome_send(self).deliver
+   #   redirect_to root_path, alert: "Thank you for the registration"
+   # end
 end

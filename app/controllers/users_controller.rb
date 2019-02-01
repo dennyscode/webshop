@@ -16,6 +16,8 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
+    UserMailer.welcome_send().deliver_now
+
   end
 
   # GET /users/1/edit
