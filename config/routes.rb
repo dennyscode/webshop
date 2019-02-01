@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'simple_pages/thank_you' => 'products#index'
   post 'simple_pages/thank_you'
   # post 'sign_up'
+  
   get 'products/id:' => 'products#index'
   # root 'simple_pages#index
   root 'simple_pages#landing_page'
