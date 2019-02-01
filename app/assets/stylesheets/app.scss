@@ -5,7 +5,7 @@ body {
 }
 
 .bot_margin {
-  margin-bottom: 5em;
+  margin-bottom: 5em !important;
 }
 
 .top_border {
@@ -44,10 +44,16 @@ body {
     visibility: hidden !important;
     display: inline;
   }
-  .nav-item {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  };
+
+.width_65 {
+  width: 65%;
+}
+
+.algn_center {
+  margin:auto;
+  text-align: center;
+}
+
   .index_container {
   margin-bottom: 8em !important;
   }

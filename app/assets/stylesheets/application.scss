@@ -108,9 +108,10 @@ form .form-group, form .form-check, .actions {
 }
 
 #error_explanation {
-  width: 450px;
+  width: 60%;
   border: 2px solid red;
   padding: 7px 7px 0;
+  margin:auto;
   margin-bottom: 20px;
   background-color: #f0f0f0;
 

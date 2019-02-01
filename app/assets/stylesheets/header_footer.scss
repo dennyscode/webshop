@@ -48,7 +48,6 @@
 
 #logo_frame {
   text-align: center;
-
   margin-top: .5em;
 }
 
@@ -109,7 +108,7 @@
 .nav-item {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-}
+};
 
 .nav-link {
   text-align: center;
@@ -128,22 +127,22 @@
 }
 
 
-#nav-link-other {
+.nav-link-other {
   font-weight: bold;
   margin-left: 1em;
   margin-right: 1em;
   background-color: $sub_bgcolor;
   border: .2em solid white;
   border-radius: .6em;
-  color: $more_textcolor !important;
+  color: $main_textcolor !important;
 }
 
-#nav-link-other:hover {
-  color: $other_textcolor !important;
+.nav-link-other:hover {
+  color: white !important;
   background-color: $main_bgcolor !important;
 }
 
-#navbarDropdown {
+.navbarDropdown {
   color: $other_textcolor;
 }
 
