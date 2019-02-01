@@ -35,26 +35,15 @@ $(document).on('turbolinks:load', function()  {
     $("p", parent).hide(),
     $( ".icon_frame i" ).show(this);
   });
-  $( "#product_card_showbtn").mouseenter(function() {
-    pre_col = $(this).css("background-color")
-    $(this).css("background-color", "white");
-    $(this).css("color", pre_col)
 
-  });
-  $( "#product_card_showbtn" ).mouseleave(function() {
-    $(this).css("background-color", pre_col);
-    $(this).css("color", "white")
-  });
-
-
-  $("#navbtn_toggle").click(function() {
-    if ($("#navbarTogglerDemo01").hasClass("show")) {
-      console.log("NAVBARTOGGLE-ON")
-      $("#placeholding_element").css("height", "0em");
-    } else {
-      console.log("NAVBARTOGGLE-OFF")
-      $("#placeholding_element").css("height", "38em");
-    }
-  });
+  // $("#navbtn_toggle").click(function() {
+  //   if ($("#navbarTogglerDemo01").hasClass("show")) {
+  //     console.log("NAVBARTOGGLE-ON")
+  //     $("#placeholding_element").css("height", "0em");
+  //   } else {
+  //     console.log("NAVBARTOGGLE-OFF")
+  //     $("#placeholding_element").css("height", "38em");
+  //   }
+  // });
 
 });

@@ -104,14 +104,6 @@ table {
    visibility: "hidden";
 }
 
-#product_card_showbtn {
-  vertical-align: bottom !important;
-  width: 100%;
-  height: 4em;
-  font-weight: bold;
-  background-color: $main_bgcolor;
-}
-
 .product_adm {
   margin-top: 2em;
   margin-bottom: 6em;
@@ -133,6 +125,10 @@ table {
   width: 100%;
   font-weight: bold;
   background-color: $other_bgcolor;
+}
+
+.product_card_btn:hover {
+  border: .2em solid white;
 }
 
 .product_action_btn {

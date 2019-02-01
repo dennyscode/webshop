@@ -2,41 +2,39 @@
   <% cache product do %>
     <div class="product_frame row">
       <%= image_tag("#{product.image_url}", class: "card-img-top col-xs-12 col-md-6") %>
-        <div class="product_card col-xs-12 col-md-6">
-          <div class="product_card_body">
-            <div class="product_card_info">
-              <p class="product_card_infohead">Title</p>
-              <h5><%= product.name %></h5>
-            </div>
-            <div class="product_card_info">
-              <p class="product_card_infohead">Description</p>
-              <p><%= product.description %></p>
-            </div>
-            <div class="product_card_info">
-              <p class="product_card_infohead">Region</p>
-              <p><%= product.colour %></p>
-            </div>
-            <div class="product_card_info">
-              <p class="product_card_infohead">Price</p>
-              <p><%= product.prize %>€</p>
-            </div>
-            <div class="product_card_info">
-              <p class="product_card_infohead">Max Person</p>
-              <p><%= product.quantity %></p>
-            </div>
+      <div class="product_card col-xs-12 col-md-6">
+        <div class="product_card_body">
+          <div class="product_card_info">
+            <p class="product_card_infohead">Title</p>
+            <h5><%= product.name %></h5>
           </div>
-          <p class="product_card_text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <%= link_to 'Show', product, class: "btn", id: "product_card_showbtn"  %>
+          <div class="product_card_info">
+            <p class="product_card_infohead">Description</p>
+            <p><%= product.description %></p>
+          </div>
+          <div class="product_card_info">
+            <p class="product_card_infohead">Region</p>
+            <p><%= product.colour %></p>
+          </div>
+          <div class="product_card_info">
+            <p class="product_card_infohead">Price</p>
+            <p><%= product.prize %>€</p>
+          </div>
+          <div class="product_card_info">
+            <p class="product_card_infohead">Max Person</p>
+            <p><%= product.quantity %></p>
+          </div>
         </div>
-      </div>
-      <% if user_signed_in? %>
+      <p class="product_card_text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <%= link_to 'Show', product, class: "btn button_style3" %>
+    </div>
+    <% if user_signed_in? %>
       <div class="col-12 product_adm">
         <div class="row">
-          <div class="col-6"><%= link_to 'Edit', edit_product_path(product), class: "btn product_card_admbtn", style: "margin-bottom: 2em" %></div>
-          <div class="col-6"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn product_card_admbtn", style: "margin-bottom: 2em"  %></div>
+          <div class="col-6"><%= link_to 'Edit', edit_product_path(product), class: "btn nav-link" %></div>
+          <div class="col-6"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn nav-link"  %></div>
         </div>
       </div>
-      <% end %>
-    </div>
+    <% end %>
   <% end %>
-<!-- </div> -->
+</div>
