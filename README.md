@@ -1,24 +1,14 @@
-# README
+# Webshop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a fully working webshop built with Rails.
+Features:
 
-Things you may want to cover:
+  -Stripe Payment
+  -Bootstrap
+  -ActionCable
+  -Testing (TDD with RSpec and FactoryBot)
+  -Caching
+  -Optimization with Redis
+  -Authentication & Authorization with Devise and CanCanCan
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+So far, I have not come up with a cool design but functionality is fully working besides E-Mail-Confirmation
