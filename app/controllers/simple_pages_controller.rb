@@ -1,9 +1,9 @@
 class SimplePagesController < ApplicationController
   def index
+    @featured_product = Product.first
   end
 
   def landing_page
-    @featured_product = Product.first
   end
 
   def thank_you

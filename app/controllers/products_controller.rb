@@ -16,7 +16,6 @@ class ProductsController < ApplicationController
         # logger.debug "before: in test and dev search for product name in db"
         @products = Product.where("name LIKE ?", "%#{search_term}%")
         # logger.debug "after: in test and dev search for product name in db"
-
       end
     else
       @products = Product.all
@@ -30,10 +29,11 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @product_image = Product.find(params[:id])
+    @product_image = @product_image.image_url
     # logger.debug "before sorting and paginating"
     @comments = @product.comments.paginate(:page => params[:page], :per_page => 3).order("created_at DESC")
     # logger.debug "after sorting and paginating"
-
   end
 
   # GET /products/new

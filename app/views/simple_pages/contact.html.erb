@@ -1,7 +1,7 @@
 <%= flash[:notice] %>
 
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
-  <h1>Contact Us</h1>
+  <h1>Get in touch</h1>
   <div class="row contact_form">
     <div class="form-group col-12">
       <%= form.label :name, class: "col-12" %>
@@ -15,7 +15,7 @@
       <%= form.label :message, class: "col-12" %>
       <%= form.text_area :message, class: "form-control col-12", placeholder: "Enter Message", rows: 5 %>
     </div>
-    <%= form.submit "Send", class: "form_label col-12 btn btn-primary" %>
+    <%= form.submit "Send", class: "form_label bot_margin col-12 btn nav-link" %>
   </div>
 
 <% end %>

@@ -15,8 +15,35 @@
 
 //= require activestorage
 //= require jquery3
-// = require jquery_ujs
+//= require jquery_ujs
+//= require popper
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require jquery.raty.js
 //= require_tree .
 //= require jquery.elevateZoom-3.0.8.min
+
+
+$(document).on('turbolinks:load', function()  {
+  $( ".icon_frame").mouseenter(function() {
+    var parent = $(this).parent()
+    $("p", parent).show(),
+    $( ".icon_frame i", parent ).hide(this);
+  });
+  $( ".icon_frame" ).mouseleave(function() {
+    var parent = $(this).parent()
+    $("p", parent).hide(),
+    $( ".icon_frame i" ).show(this);
+  });
+
+  // $("#navbtn_toggle").click(function() {
+  //   if ($("#navbarTogglerDemo01").hasClass("show")) {
+  //     console.log("NAVBARTOGGLE-ON")
+  //     $("#placeholding_element").css("height", "0em");
+  //   } else {
+  //     console.log("NAVBARTOGGLE-OFF")
+  //     $("#placeholding_element").css("height", "38em");
+  //   }
+  // });
+
+});

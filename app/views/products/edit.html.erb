@@ -1,5 +1,7 @@
-<h2>Editing the Product: <br><%= @product.name %></h2>
-<%= render 'form', product: @product %>
+<div class="frame bot_margin center">
+  <h2>Editing the Product: <br><%= @product.name %></h2>
+  <%= render 'form', product: @product %>
 
-<%= link_to 'Show', @product, class: "col-3 btn btn-primary" %> |
-<%= link_to 'Back', products_path, class: "col-3 btn btn-primary" %>
+  <%= link_to 'Show', @product, class: "col-4 btn nav-link-other bot_margin" %>
+  <%= link_to 'Back', products_path, class: "col-4 btn nav-link-other bot_margin" %>
+</div>

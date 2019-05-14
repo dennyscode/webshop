@@ -8,18 +8,11 @@
         <%= render partial: 'products', locals: {product: product} %>
       <% end %>
     <% end %>
-
-
     <br>
   </div><!-- /end row-->
   <br>
-
-
-    <div class="col-xs-4 button_row">
-      <%= link_to 'New Product', new_product_path, class:"btn btn-outline-dark" %>
-    </div><!--/end col-->
-    <div class="col-xs-4 button_row">
-      <%= link_to 'View Items', new_product_path, class:"btn btn-outline-dark" %>
-    </div><!--/end col-->
+  <div class="col-12 button_row">
+    <%= link_to 'New Product', new_product_path, class:"btn product_card_btn" %>
+  </div><!--/end col-->
 </div><!-- /end frame-->
 <br>

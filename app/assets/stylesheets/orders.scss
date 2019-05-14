@@ -4,18 +4,12 @@
 
 // * { border: 1px solid red};
 
-// Colors:
-$color_greenish: #5FAD56;
-$color_yellowish: #FFBC42;
-$color_blueish: #2660A4;
-$color_purpleish: #540D6E;
-$color_creamy: #E3DFFF;
-$color_lightgreenish: #B3D89C;
-$color_reddish: #D1495B;
+@import "variables";
+
 
 .order_frame {
   border-radius: 4em;
-  border: .4em solid $color_reddish;
+  border: .4em solid white;
   padding: 1.5em;
   margin: auto;
   width: 95%;
@@ -23,18 +17,8 @@ $color_reddish: #D1495B;
   overflow-wrap: break-word;
 }
 
-.container h2 {
-  text-align: center;
-}
-
 .product_img {
   text-align: center;
   width:50%;
   margin: auto;
-}
-
-.container {
-
-  width: 40%;
-
 }

@@ -1,7 +1,67 @@
-<h2>Featured Product:</h2>
-<%= @featured_product.name %>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag("pexels-photo-386000.jpeg" , class: "carousel_img", alt: "Matchbox Van on the Beach") %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>...</h5>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("pexels-photo-257961.jpeg", class: "carousel_img", alt: "Skiing Equpipment for a day out") %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>...</h5>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("maldives-ile-beach-sun-37921.jpeg" , class: "carousel_img", alt: "Relaxing in the Pool") %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>...</h5>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("pexels-photo-415958.jpeg" , class: "carousel_img", alt: "View over in the sky in the mountains") %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>...</h5>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("pexels-photo-221457.jpeg" , class: "carousel_img", alt: "Playing at the beach") %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>...</h5>
+        <p>...</p>
+      </div>
+    </div>
 
-<%= params[:example_key].to_i*10 %>
-<%= form_with(url: '/products', local: true) do |form| %>
-  Form contents
-<% end %>
+    <div class="carousel-item">
+      <%= image_tag("pexels-photo-1450372.jpeg" , class: "carousel_img", alt: "Hammock in paradise") %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>...</h5>
+        <p>...</p>
+      </div>
+    </div>
+
+  <a class="carousel-control-prev carousel_control" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" id="carousel_icons" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next carousel_control" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class= "index_container">
+  <h1>Go See Places at GoHoliday</h1>
+  <h2>Your source for dreams you have been thinking of</h2>
+</div>

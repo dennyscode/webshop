@@ -1,6 +1,6 @@
 <!-- Navbar Starts here -->
 <nav class="navbar navbar-expand-lg fixed-top">
-  <button class="navbar-toggler" id="navbtn_toggle" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -42,7 +42,7 @@
 
     <!-- This is the new form created in HTML with Rails function form_with -->
     <%= form_with(url: products_path, method: 'get', local: true, class: "form-inline my-2 my-lg-0") do |form| %>
-      <%= form.text_field :q, value: params[:q], class: "form-control mr-sm-2", id: "search_field", type: "search", placeholder: "Go Search the Shop"  %>
+      <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control mr-sm-2", id: "search_field", type: "search", placeholder: "Go Search the Shop"  %>
       <%= form.submit 'Search', class:"btn nav-my-2 my-sm-0 nav-link", id: "btn_search", type:"submit" %>
     <% end %>
   </div>

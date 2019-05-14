@@ -1,104 +1,157 @@
 <div class= "frame">
+  <h1><%= @bla %></h1>
+  <h1><%= @product_image %></h1>
   <div class="row" data-product-id="<%= @product.id %>">
     <% cache @product do %>
-      <div class="col-sm-12 col-lg-2">
-        <p>
-          <div class="col-12 header">
-            <strong>Name:</strong>
-          </div><!-- /end col-->
-          <div class="col-12 name">
-            <h2><%= @product.name %></h2>
+
+    <div class="col-12">
+      <div class="row product_frame">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body top_radius">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                    <%= image_tag(@product.image_url, data_zoom_image: "@product.product_image.url", class: "img-zoom d-block w-100 ") %>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <%= image_tag(@product.image_url, data_zoom_image: "@product.product_image.url", class: "img-zoom d-block w-100 ") %>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <%= image_tag(@product.image_url, data_zoom_image: "@product.product_image.url", class: "img-zoom d-block w-100 ") %>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn nav-link">Gallery</a>
+            </div>
           </div>
-        </p>
-      </div><!-- /end col-->
-
-      <div class="col-sm-12 col-lg-2">
-      <p>
-        <div class="col-12 header">
-          <strong>Description:</strong>
-        </div><!-- /end col-->
-        <div class="col-12 descr">
-          <%= @product.description %>
-        </div>
-      </p>
-      </div><!-- /end col-->
-
-      <div class="col-sm-12 col-lg-2">
-      <p>
-        <div class="col-12 header">
-          <strong>Color:</strong>
-        </div><!-- /end col-->
-        <div class="col-12 descr">
-          <%= @product.colour %>
-        </div>
-      </p>
-      </div><!-- /end col-->
-
-      <div class="col-sm-12 col-lg-2">
-        <p>
-          <div class="col-12 header">
-            <strong>Quantity:</strong>
-          </div><!-- /end col-->
-          <div class="col-12 descr">
-            <%= @product.quantity %>
-          </div>
-        </p>
-      </div><!-- /end col-->
-
-      <div class="col-sm-12 col-lg-4">
-        <p>
-          <div class="col-12 header">
-            <strong>Image url:</strong>
-          </div><!-- /end col-->
-          <div class="col-12">
-            <%= link_to "Click here to jump to Image directory", @product.image_url, class: "descr" %>
-          </div>
-        </p>
-      </div><!-- /end col-->
-
-      <div class="col-6">
-        <%= image_tag(@product.image_url, data_zoom_image: "@product.product_image.url", class: "img-zoom d-block w-100 product_frame") %>
-      </div><!-- /end col-->
-
-
-
-      <div class="col-sm-6">
-        <div class="col-12 header">
-          <strong>Prize:</strong>
-        </div><!-- /end col-->
-        <div class="col-12 prize">
-          <%= @product.prize %>€
         </div>
         <div class="col-12">
-          <%= form_with(url: '/payments/create') do |form| %>
-            <%= hidden_field_tag(:product_id, @product.id) %>
-            <%= render partial: "shared/stripe_checkout_button" %>
-          <% end %>
+          <div class="card">
+            <div class="card-body name">
+              <div class="row">
+                <div class="col-xs-12 col-lg-1 header">
+                  <h5 class="card-title">Name of this Place</h5>
+                </div>
+                <div class="col-xs-12 col-lg-11 descr">
+                  <p class="card-text"><%= @product.name %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body name">
+              <div class="row">
+                <div class="col-xs-12 col-lg-1 header">
+                  <h5 class="card-title">Description</h5>
+                </div>
+                <div class="col-xs-12 col-lg-11 descr">
+                  <p class="card-text"><%= @product.description %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body name">
+              <div class="row">
+                <div class="col-xs-12 col-lg-1 header">
+                  <h5 class="card-title">Details</h5>
+                </div>
+                <div class="col-xs-12 col-lg-11 descr">
+                  <p class="card-text"><%= @product.colour %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body name">
+              <div class="row">
+                <div class="col-xs-12 col-lg-1 header">
+                  <h5 class="card-title">Max Persons</h5>
+                </div>
+                <div class="col-xs-12 col-lg-11 descr">
+                  <p class="card-text"><%= @product.quantity %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body name">
+              <div class="row">
+                <div class="col-xs-12 col-lg-1 header">
+                  <h5 class="card-title">Image</h5>
+                </div>
+                <div class="col-xs-12 col-lg-11 descr">
+                  <%= link_to "Click here to jump to Image directory", @product.image_url, class: "descr" %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body name">
+              <div class="row">
+                <div class="col-xs-12 col-lg-1 header">
+                  <h5 class="card-title">Price</h5>
+                </div>
+                <div class="col-xs-12 col-lg-11 descr">
+                  <p class="card-text"><%= @product.prize %>€</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body name">
+              <div class="row">
+                <div class="col-xs-12 col-lg-1 header">
+                  <h5 class="card-title">Buy</h5>
+                </div>
+                <div class="col-xs-12 col-lg-11">
+                  <%= form_with(url: '/payments/create') do |form| %>
+                    <%= hidden_field_tag(:product_id, @product.id) %>
+                    <%= render partial: "shared/stripe_checkout_button" %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-      <div class="col-12">
-        <div class="row">
-          <div class="col-4">
-            <%= render 'new_comment' %>
-          </div>
-          <div class="col-7">
-            <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-            <%= render 'comments' %>
-            <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
-          </div>
-          <div class="col-12">
-            <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
+        <div class="col-12">
+          <div class="row comments_frame">
+            <div class="col-12 avg_rating">
+              <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
+            </div>
+            <div class="col-xs-12 col-lg-4 top_margin">
+              <%= render 'new_comment' %>
+            </div>
+
+            <div class="col-xs-12 col-lg-8 top_margin">
+              <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+              <%= render 'comments' %>
+              <div class="col-12 paginator top_margin">
+                <%= will_paginate @comments, renderer: BootstrapPagination::Rails %>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="col-12 product_adm">
+          <div class="row">
+            <% if user_signed_in? %>
+              <div class="col-12">
+                <%= link_to 'Edit', edit_product_path(@product), class:"btn nav-link"  %>
+              </div><!-- /end col-->
+            <% end %>
+            <div class="col-12">
+              <%= link_to 'Back', products_path, class:"btn nav-link" %>
+            </div><!--/end col-->
+          </div>
+        </div>
+
       </div>
-    </div><!-- /end col-->
 
-    <div class="col-2 button_row">
-      <%= link_to 'Back', products_path, class:"btn btn-outline-dark" %>
-    </div><!--/end col-->
-    <div class="col-2">
-      <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-outline-dark"  %>
-    </div><!-- /end col-->
-    <% end %>
-  </div><!-- end row -->
-</div><!-- end show_frame -->
+
+
+      <% end %><!-- /end CACHE -->
+    </div><!-- end row -->
+  </div><!-- end show_frame -->

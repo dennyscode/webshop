@@ -28,6 +28,7 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
 //   App.product.listen_to_comments();
 // });
 
+
 $(document).on('turbolinks:load', function() {
   setTimeout(function() {
     App.product.listen_to_comments();

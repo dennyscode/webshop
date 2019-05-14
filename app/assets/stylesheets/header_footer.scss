@@ -1,93 +1,196 @@
 @import "variables";
 
-
 // Navbar starts here --->
 .navbar {
-  background-color: $color_greenish !important;
+  background-color: $main_bgcolor !important;
   display: block;
-  text-align: center;
   font-family: 'Comfortaa', cursive;
-  font-size: 1.5em;
+  margin: 0;
+  width: 100%;
+  padding: 0 !important;
+
 }
 
-.nav-link {
-  color: white;
+.navbar-toggler {
+  border: .2em solid $more_textcolor !important;
 }
+
+.navbar-toggler:focus {
+  border: .2em solid white !important;
+}
+
+.navbar-toggler i {
+    color: $more_textcolor;
+}
+
+.navbar-toggler:hover {
+  border: .2em solid white !important;
+   i { color: white; }
+}
+
 
 #logo {
-  color: $color_yellowish;
-  font-family: 'Pacifico', cursive, 'sans-serif';
-  font-size: 2.5em;
-  display: block;
+  color: $logo_textcolor;
+  font-family: $logo_font;
+  font-weight: bold;
   text-decoration: underline;
-  padding-bottom: .5em;
-  margin-top: .5em;
-  margin-bottom: .25em;
+  font-size: 2.25em;
+  display: inline;
+  margin: auto;
+  width: 33.33%;
+  visibility: hidden;
+  display: block;
 }
 
-#navbarTogglerDemo01 {
+.btn_helper {
+  margin-top: -.5em;
+}
+
+#logo_frame {
+  text-align: center;
+  margin-top: .5em;
+}
+
+#logo_frame i {
+  padding: .2em;
   display: block;
-  background-color: $color_yellowish;
+  font-size: 1.7em;
+  border: .1em solid $logo_textcolor;
+  border-radius: .2em;
+}
+
+#navbarSupportedContent {
+  background-color: $sub_bgcolor;
   border-radius: 1.2em .6em;
   margin-top: .5em;
   margin-bottom: .5em;
-  padding: .6em
+  padding: .2em
 }
 
-.search_field {
-  background-color: $color_greenish;
+#search_field {
+  background-color: $sub_bgcolor;
   border-radius: .6em;
   font-weight: 600;
   color: white;
+  width: 100%;
+  margin-bottom: .5em;
 }
 
-.search_field::placeholder {
+#search_field::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: $other_textcolor;
   text-align: center;
+}
+
+.form-control {
+      border: .2em solid $other_textcolor;
+}
+
+#btn_search {
+  width: 100%;
+  text-decoration: underline;
+  margin-top: .5em;
+}
+
+#editing-view-port {
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: $other_textcolor;
+  box-shadow: 0 0 0 0.2rem $other_textcolor;
 }
 
 .navbar-collapse {
   margin: 0 2em;
 }
 
+.nav-item {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+};
+
+.button_style3 {
+  vertical-align: bottom !important;
+  width: 100%;
+  height: 4em;
+  font-weight: bold;
+  background-color: $main_bgcolor;
+}
+
+.button_style3:hover {
+  background-color: white;
+  color: $other_textcolor;
+  border: .2em solid $other_textcolor;
+}
+
+
 .nav-link {
+  text-align: center;
   font-weight: bold;
   margin-left: 1em;
   margin-right: 1em;
-  border: .15em solid $color_greenish;
+  background-color: $sub_bgcolor;
+  border: .2em solid $other_textcolor;
   border-radius: .6em;
+  color: $other_textcolor !important;
 }
-
-#navbarDropdown, #nav-btn{
-  color: white;
-}
-
 .nav-link:hover {
-  background-color: $color_greenish;
+  color: white !important;
+  background-color: $main_bgcolor;
+  border: .2em solid $sub_bgcolor;
 }
+
+.nav-link-other {
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: $sub_bgcolor;
+  border: .2em solid white;
+  border-radius: .6em;
+  color: $main_textcolor !important;
+}
+
+.nav-link-other:hover {
+  color: white !important;
+  background-color: $main_bgcolor !important;
+}
+
+.navbarDropdown {
+  color: $other_textcolor;
+}
+
+
 // <---- Navbar ends here
 
 // Footer starts here --->
 
 .footer_styles {
   font-family: 'Pacifico', cursive, 'sans-serif';
-  font-size: 1.2em;
   display: block;
 }
 
+.resp_size, #nav-link-other {
+  font-size: .5em !important;
+}
+
 footer {
-  background-color: $color_greenish;
+  background-color: $main_bgcolor;
   text-align: center;
   color: white;
   vertical-align: bottom;
-  position: absolute;
+  position: fixed;
   left: 0;
-  right: 0;
+  bottom: 0;
   width: 100%;
+  margin-top: 2em;
 }
 
 footer:not(#footer_copyright) {
+}
+
+#footer_row * {
+  margin: auto;
 }
 
 footer > p {
@@ -101,5 +204,11 @@ footer > p :not(#footer_copyright) {
   text-align: right;
 }
 
+
+#footer_row {
+ margin-right: 0 !important;
+ margin-left: 0 !important;
+ padding: 1em;
+}
 
 // <---- Footer ends here

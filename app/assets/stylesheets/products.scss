@@ -12,22 +12,17 @@ form label {
   text-align: center;
 }
 
+form textarea {
+  width: 80%;
+  height:8em;
+  border-radius: 5em;
+  text-align: center;
+  margin: auto;
+}
+
 .frame {
   text-align: center;
 }
-
-.main_frame { margin-top: 38em;}
-
-@media (min-width: 576px) {
-  .main_frame { margin-top: 33em;}
-}
-// @media (min-width: 768px) {
-//   .main_frame { margin-top: 25em;}
-//   }
-  @media (min-width: 1200px) {
-    .main_frame { margin-top: 15em;}
-    }
-
 
 // .mt-2 {
 //
@@ -36,21 +31,6 @@ form label {
 // .mt-lg-0 {
 //   .main_frame { margin-top: 15em;}
 // }
-
-
-
-
-.header {
-  font-size: 1.6em;
-  font-family: 'Comfortaa', cursive;
-  margin-bottom: 2em;
-  color: white;
-}
-
-.name h2 {
-  font-family: 'Pacifico', cursive, 'sans-serif';
-  font-size: 3em;
-}
 
 // index
 
@@ -70,8 +50,7 @@ table {
 }
 
 .url_image:hover {
-  // background-color: $color_greenish;
-  background-color: $color_greenish;
+  background-color: $sub_textcolor;
   background-size: 200% 100%;
   background-position:left bottom;
   text-decoration: none;
@@ -79,6 +58,7 @@ table {
 
 .button_row {
   text-align: left;
+  margin-bottom: 6em;
 }
 
 .btn:visited {
@@ -91,45 +71,80 @@ table {
 
 // Show:
 
+
 .descr {
   font-size: 1.5em;
   font-weight: 600;
 }
 
 .name, .descr {
-  color: $color_reddish
+  color: $main_textcolor
 }
 
-.product_frame {
-  border-radius: 4em;
-  border: .4em solid $color_reddish;
-  padding: 1.5em;
-  margin: auto;
-  width: 95%;
-  height: 95%;
-  overflow-wrap: break-word;
+
+
+
+
+.product_card_text small {
+  color: white;
+}
+
+.product_card_info {
+  border-bottom: .3em solid $main_bgcolor;
+  border-radius: .5em;
+  margin: .75em;
+}
+
+.product_card_infohead {
+  background-color: $main_bgcolor;
+  border-radius: .5em;
+}
+
+.product_card_text {
+   visibility: "hidden";
+}
+
+.product_adm {
+  margin-top: 2em;
+  margin-bottom: 6em;
+  width: 100%;
+  border-radius: .5em;
+  background-color: $main_bgcolor;
+}
+
+.product_adm .row .col-6 {}
+
+.card-img-top {
+  border: .4em solid white;
+  border-radius: 1em;
+  width: 100%;
+}
+
+.product_card_btn {
+  margin-top: 2em;
+  width: 100%;
+  font-weight: bold;
+  background-color: $other_bgcolor;
+}
+
+.product_card_btn:hover {
+  border: .2em solid white;
+}
+
+.product_action_btn {
+  width: 100%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border: .15em solid white;
+}
+
+.stripe-button-el {
+  width: 100%;
 }
 
 .shop_window {
   width: 40%;
   margin: 50px auto;
-}
-
-.carousel_img {
-  border-radius: 20%;
-  border: 4px solid $color_reddish;
-}
-
-.carousel-caption {
-  left: 0 !important;
-  right: 0 !important;
-  background-color: $color_reddish;
-  border-radius: 10% 10% 10% 10% ;
-}
-
-.carousel-caption h5 {
-  font-family: 'Pacifico', cursive, 'sans-serif';
-  font-size: 2.5em;
 }
 
 .product_image {
@@ -139,10 +154,6 @@ table {
   border-radius: 0.4em;
 }
 
-.actions {
-  margin-top: 2em;
-  text-align: center;
-}
 
 .img_square {
   margin: auto;
@@ -154,25 +165,23 @@ table {
 h2 {
   font-family: 'Pacifico', cursive, 'sans-serif';
   font-size: 2em;
-  color: $color_yellowish;
+  color: $main_textcolor;
 }
 
 .product_frame p {
   color: white;
 }
 
+.card:first-child {
+  border-radius: 5em 5em 0 0;
+}
+
+.show_frame, .card-body {
+  background-color: $main_bgcolor;
+}
 
 .ruby_code {
   margin: auto;
   text-align: center;
   color: yellow;
-}
-
-.prize {
-  font-size: 3em;
-  font-weight: bold;
-  color: green;
-  border: .2em solid green;
-  border-radius: .2em;
-  padding: 1em;
 }
