@@ -15,4 +15,4 @@ Features:
 -Optimization with Redis
 -Authentication & Authorization with Devise and CanCanCan
 
-So far, I have not come up with a cool design but functionality is fully working  E-Mail-Confirmation
+So far, I have not come up with a cool design but functionality is fully working
